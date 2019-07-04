@@ -1,0 +1,49 @@
+<div class="container-fluid" style="background-color: rgb(233, 233, 222); width:100%; height:963px;">
+    <div class="row" style="margin-left: 35%; margin-top:5%">
+      
+      <div class="col-12">
+         
+          <div class="loginpage box">
+                <div class="box" style="background-color: rgb(202, 52, 97);width: 500px;z-index: 2;
+                height: 70px;
+                opacity: 1;
+                position: absolute;                       
+                top:-20px;
+                left: 25px;
+                border-radius:5px"><br>
+                <span style="font-family: Muli;
+             margin-left: 37%;
+                font-size: 35px;
+                font-weight: 200;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.25;
+                letter-spacing: normal;
+                color:white;">Log in</span><br></div>
+          <form [formGroup]="loginForm"  style="margin-top: 20%">
+
+<div class="input-container col-6">
+    <i class="fa fa-building" style="color:#a3a3a3;font-size: 22px;  "></i>
+
+    <input type="text" class="input-field" formControlName="user" placeholder="User Name..">
+  </div>
+
+  <div class="input-container col-6">
+      <i class="fa fa-lock icon" style="color:#a3a3a3;font-size: 22px;  "></i>
+    
+      <input type="password" class="input-field" formControlName="pasword" placeholder="Password..">
+
+
+
+    </div>
+<a style="margin-left:5% ;color:  rgb(146, 33, 146);font-size: 16px">Resend Verification Email</a><a style="margin-left: 17% ;color:  rgb(146, 33, 146);font-size: 16px">Forgot Password</a>
+
+    <div class="form-group">
+        <button  type="submit"  (click)="loginUser()" class="btn submitbutton">LET'S GO</button>
+    </div>
+
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
